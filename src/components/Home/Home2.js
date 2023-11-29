@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import homeLogo1 from "../../Assets/home-main1.png";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -33,11 +34,14 @@ function Home2() {
               <i><b className="purple">Collaborative Approach:</b></i> Seamless integration with stakeholders, designers, and backend teams.
             </p>
           </Col>
-          {/* <Col md={4} className="myAvtar">
-            <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
-            </Tilt>
-          </Col> */}
+          <Col md={4} className="myAvtar">
+          <img
+                src={homeLogo1}
+                alt="home pic"
+                className="img-fluid"
+                style={{ maxHeight: "450px" }}
+              />
+          </Col>
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
