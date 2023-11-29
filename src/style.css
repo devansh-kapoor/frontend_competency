@@ -262,7 +262,7 @@ button:focus {
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
-  padding-bottom: 30px !important;
+  /* padding-bottom: 30px !important; */
   padding-top: 30px !important;
 }
 
@@ -322,13 +322,13 @@ button:focus {
 .home-about-section {
   position: relative;
   padding-bottom: 70px !important;
-  padding-top: 70px !important;
+  /* padding-top: 70px !important; */
 }
 
 .home-about-description {
   color: #0c0513!important;
   padding-top: 100px !important;
-  padding-bottom: 20px !important;
+  padding-bottom: 35px !important;
   text-align: center;
 }
 
