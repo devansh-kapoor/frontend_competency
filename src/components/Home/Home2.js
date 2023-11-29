@@ -49,7 +49,7 @@ function Home2() {
                 style={{ maxHeight: "450px" }}
               />
           </Col>
-        </Row>\
+        </Row>
         <Row>
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
