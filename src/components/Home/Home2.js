@@ -9,6 +9,9 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Aboutcard from "../About/AboutCard";
+import Techstack from "../About/Techstack";
+import Toolstack from "../About/Toolstack";
 
 function Home2() {
   return (
@@ -16,7 +19,11 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
+          <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              Know Who <strong className="purple">We Are</strong>
+            </h1>
+            <Aboutcard />
+            {/* <h1 style={{ fontSize: "2.6em" }}>
               LET US <span className="purple"> INTRODUCE </span> OURSELF
             </h1>
             <p className="home-about-body">
@@ -32,7 +39,7 @@ function Home2() {
               <i><b className="purple">Cross-Browser Compatibility:</b></i> Rigorous testing for consistent experiences across major browsers.
               <br />
               <i><b className="purple">Collaborative Approach:</b></i> Seamless integration with stakeholders, designers, and backend teams.
-            </p>
+            </p> */}
           </Col>
           <Col md={4} className="myAvtar">
           <img
@@ -42,6 +49,18 @@ function Home2() {
                 style={{ maxHeight: "450px" }}
               />
           </Col>
+        </Row>\
+        <Row>
+        <h1 className="project-heading">
+          Professional <strong className="purple">Skillset </strong>
+        </h1>
+
+        <Techstack />
+
+        <h1 className="project-heading">
+          <strong className="purple">Tools</strong> we use
+        </h1>
+        <Toolstack />
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
