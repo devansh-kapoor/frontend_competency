@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 // import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import homeLogo1 from "../../Assets/home-main1.png";
+import homeLogo from "../../Assets/home-main.png";
 import {
   AiFillGithub,
   AiOutlineTwitter,
@@ -43,7 +43,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
           <img
-                src={homeLogo1}
+                src={homeLogo}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
