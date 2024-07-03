@@ -7,6 +7,7 @@ import serverless from "../../Assets/Projects/serverless.png";
 import microFrontend from "../../Assets/Projects/microFrontend.png";
 import svelte from "../../Assets/Projects/svelte.png";
 import comingSoon from "../../Assets/Projects/comingsoon.jpg";
+import adminDashboard from "../../Assets/Projects/admin_dashboard.jpg"
 
 function Projects() {
   return (
@@ -20,6 +21,19 @@ function Projects() {
           Here are a few projects We've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={adminDashboard}
+              isBlog={false}
+              title="EventX"
+              description={<p>Event Management System is a <span className="purple"> React Native </span>app simplifying event management. Organizers 
+              effortlessly create and manage events, while participants discover and RSVP to events seamlessly. 
+              Enjoy real-time updates and a user-friendly experience for organizing and attending events.
+              </p>}
+              ghLink="https://github.com/NashTech-Labs"
+              // demoLink="https://blogs.soumya-jit.tech/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={microFrontend}
@@ -115,19 +129,6 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={comingSoon}
-              isBlog={false}
-              title="Event Management System"
-              description={<p>Event Management System is a <span className="purple"> React Native </span>app simplifying event management. Organizers 
-              effortlessly create and manage events, while participants discover and RSVP to events seamlessly. 
-              Enjoy real-time updates and a user-friendly experience for organizing and attending events.
-              </p>}
-              ghLink="https://github.com/NashTech-Labs"
-              // demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
