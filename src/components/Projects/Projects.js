@@ -7,7 +7,7 @@ import serverless from "../../Assets/Projects/serverless.png";
 import microFrontend from "../../Assets/Projects/microFrontend.png";
 import svelte from "../../Assets/Projects/svelte.png";
 import comingSoon from "../../Assets/Projects/comingsoon.jpg";
-import adminDashboard from "../../Assets/Projects/admin_dashboard.jpg"
+import adminDashboard from "../../Assets/Projects/admin_dashboard.jpg";
 
 function Projects() {
   return (
@@ -21,36 +21,48 @@ function Projects() {
           Here are a few projects We've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-        <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={adminDashboard}
               isBlog={false}
               title="EventX"
-              description={<p>Event Management System is a <span className="purple"> React Native </span>app simplifying event management. Organizers 
-              effortlessly create and manage events, while participants discover and RSVP to events seamlessly. 
-              Enjoy real-time updates and a user-friendly experience for organizing and attending events.
-              </p>}
+              description={
+                <p>
+                  EventX is an innovative mobile application developed using
+                  <span className="purple"> React Native </span> and{" "}
+                  <span className="purple"> NestJS </span>, designed to
+                  streamline event registration and management. Users can easily
+                  sign up and log in to the system, browse through various
+                  events, register for their preferred ones, and navigate
+                  seamlessly to event locations via Google Maps integration. On
+                  the administrative side, EventX offers a robust analytical
+                  dashboard that provides insightful metrics on users and
+                  events. Admins have full control over event management,
+                  including the ability to create, read, update, and delete
+                  events, ensuring a smooth and efficient event management
+                  experience.
+                </p>
+              }
               ghLink="https://github.com/NashTech-Labs"
               // demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={microFrontend}
               isBlog={false}
-              title="Multi Tenant Management System"
+              title="OrgX"
               description={
                 <p>
-                  Our Multi-Tenant Management System leverages a cutting-edge
-                  <span className="purple"> Microfrontend </span> architecture,
-                  seamlessly integrating{" "}
-                  <span className="purple"> Angular </span> and{" "}
-                  <span className="purple"> React.js </span> components. Powered
-                  by a serverless backend, this innovative approach ensures
-                  scalability, flexibility, and efficient management across
-                  multiple tenants. Experience the best of both Angular and
-                  React within a unified system, optimizing performance and user
-                  experience.
+                  OrgX is a cutting-edge Human Resource Management System (HRMS)
+                  portal designed to streamline and enhance the HR functions of
+                  any organization. Developed using <span className="purple">   Angular </span>, <span className="purple"> React </span> & <span className="purple"> NestJs </span>,
+                  OrgX is built to manage multi-tenant systems, ensuring that
+                  multiple organizations can operate within the same platform
+                  securely and efficiently. The portal is designed to be
+                  scalable, robust, and user-friendly, providing comprehensive
+                  HR solutions from recruitment and onboarding to payroll and
+                  performance management.
                 </p>
               }
               ghLink="https://github.com/NashTech-Labs/FrontEndCompetency_MicroFrontends"
@@ -58,7 +70,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={svelte}
               isBlog={false}
@@ -81,7 +93,7 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={serverless}
               isBlog={false}
@@ -91,9 +103,12 @@ function Projects() {
                   Embrace the power of serverless computing with our Node.js
                   backend seamlessly integrated into our Multi-Tenant Management
                   System. This project leverages the efficiency and scalability
-                  of <span className="purple">serverless</span> architecture, providing a robust foundation for our
-                  multi-tenant environment. Enjoy the flexibility of <span className="purple">Node.js</span> for streamlined, 
-                  event-driven processes that enhance the overall performance and responsiveness of your system.
+                  of <span className="purple">serverless</span> architecture,
+                  providing a robust foundation for our multi-tenant
+                  environment. Enjoy the flexibility of{" "}
+                  <span className="purple">Node.js</span> for streamlined,
+                  event-driven processes that enhance the overall performance
+                  and responsiveness of your system.
                 </p>
               }
               ghLink="https://github.com/NashTech-Labs/FrontEndCompetency_Serverless"
@@ -101,34 +116,44 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={knurons}
               isBlog={false}
               title="Knurons"
               description={
-                <p>Kuronurs, our <span className="purple">React</span> -based application, serves as a centralized hub for efficiently managing IoT devices. 
-              This project brings together the power of React for a dynamic and responsive user interface, ensuring seamless interaction 
-              with a diverse array of IoT devices. From monitoring to control, Knurons simplifies the complexity of IoT device management, 
-              providing a user-friendly platform for streamlined operations.
-              </p>}
+                <p>
+                  Kuronurs, our <span className="purple">React</span> -based
+                  application, serves as a centralized hub for efficiently
+                  managing IoT devices. This project brings together the power
+                  of React for a dynamic and responsive user interface, ensuring
+                  seamless interaction with a diverse array of IoT devices. From
+                  monitoring to control, Knurons simplifies the complexity of
+                  IoT device management, providing a user-friendly platform for
+                  streamlined operations.
+                </p>
+              }
               ghLink="https://github.com/Knurons/knurons-ui"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          <Col md={6} lg={4} className="project-card">
             <ProjectCard
               imgPath={comingSoon}
               isBlog={false}
               title="Videogram"
-              description={<p>Videogram is an <span className="purple">Ionic Angular </span> app for sharing and discovering videos. Users can upload, 
-              manage profiles, and engage with a vibrant community through likes and comments. Explore trending content 
-              in this dynamic video-sharing platform.
-              </p>}
+              description={
+                <p>
+                  Videogram is an <span className="purple">Ionic Angular </span>{" "}
+                  app for sharing and discovering videos. Users can upload,
+                  manage profiles, and engage with a vibrant community through
+                  likes and comments. Explore trending content in this dynamic
+                  video-sharing platform.
+                </p>
+              }
               ghLink="https://github.com/NashTech-Labs"
             />
           </Col>
-
         </Row>
       </Container>
     </Container>
