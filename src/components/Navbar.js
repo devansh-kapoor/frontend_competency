@@ -12,10 +12,12 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { useResolvedPath } from "react-router-dom";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const path = useResolvedPath();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -52,8 +54,8 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link as={Link} to="/"className={path.pathname === '/'  ? 'activeTab' : ''} onClick={() => updateExpanded(false)}>
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home 
               </Nav.Link>
             </Nav.Item>
 
@@ -70,7 +72,8 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/solutions"
+                className={path.pathname === '/solutions'  ? 'activeTab' : ''}
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen

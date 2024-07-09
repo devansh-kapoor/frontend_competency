@@ -206,6 +206,9 @@ button:focus {
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
+.navbar-nav .nav-item a.activeTab::after {
+  width: 100%;
+}
 
 /* --------- */
 /* Home section */

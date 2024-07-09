@@ -28,19 +28,17 @@ function Projects() {
               title="EventX"
               description={
                 <p>
-                  EventX is an innovative mobile application developed using
-                  <span className="purple"> React Native </span> and{" "}
-                  <span className="purple"> NestJS </span>, designed to
-                  streamline event registration and management. Users can easily
-                  sign up and log in to the system, browse through various
-                  events, register for their preferred ones, and navigate
-                  seamlessly to event locations via Google Maps integration. On
-                  the administrative side, EventX offers a robust analytical
-                  dashboard that provides insightful metrics on users and
+                  EventX is an innovative mobile app built with{" "}
+                  <span className="purple"> React Native</span> and
+                  <span className="purple"> NestJS </span>, designed for
+                  seamless event registration and management. Users can easily
+                  sign up, browse events, register, and navigate to event
+                  locations using Google Maps. For administrators, EventX offers
+                  a comprehensive dashboard with insightful metrics on users and
                   events. Admins have full control over event management,
-                  including the ability to create, read, update, and delete
-                  events, ensuring a smooth and efficient event management
-                  experience.
+                  including creating, reading, updating, and deleting events.
+                  This ensures a smooth, efficient, and streamlined event
+                  management experience for all users.
                 </p>
               }
               ghLink="https://github.com/NashTech-Labs"
@@ -56,12 +54,15 @@ function Projects() {
                 <p>
                   OrgX is a cutting-edge Human Resource Management System (HRMS)
                   portal designed to streamline and enhance the HR functions of
-                  any organization. Developed using <span className="purple">   Angular </span>, <span className="purple"> React </span> & <span className="purple"> NestJs </span>,
-                  OrgX is built to manage multi-tenant systems, ensuring that
-                  multiple organizations can operate within the same platform
-                  securely and efficiently. The portal is designed to be
-                  scalable, robust, and user-friendly, providing comprehensive
-                  HR solutions from recruitment and onboarding to payroll and
+                  any organization. Developed using{" "}
+                  <span className="purple"> Angular </span>,{" "}
+                  <span className="purple"> React </span> &{" "}
+                  <span className="purple"> NestJs </span>, OrgX is built to
+                  manage multi-tenant systems, ensuring that multiple
+                  organizations can operate within the same platform securely
+                  and efficiently. The portal is designed to be scalable,
+                  robust, and user-friendly, providing comprehensive HR
+                  solutions from recruitment and onboarding to payroll and
                   performance management.
                 </p>
               }
@@ -144,11 +145,13 @@ function Projects() {
               title="Videogram"
               description={
                 <p>
-                  Videogram is an <span className="purple">Ionic Angular </span>{" "}
-                  app for sharing and discovering videos. Users can upload,
-                  manage profiles, and engage with a vibrant community through
-                  likes and comments. Explore trending content in this dynamic
-                  video-sharing platform.
+                  Videogram is an <span className="purple">Ionic Angular</span> app for sharing and discovering
+                  videos. Users can upload their own videos, manage personal
+                  profiles, and engage with a vibrant community through likes
+                  and comments. Explore trending content and discover new
+                  creators on this dynamic video-sharing platform. With a
+                  user-friendly interface and robust features, Videogram ensures
+                  an engaging and interactive experience for all users.
                 </p>
               }
               ghLink="https://github.com/NashTech-Labs"
